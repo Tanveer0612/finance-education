@@ -1,65 +1,166 @@
-import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 export default function Home() {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    return (
+        <main className="bg-[#f8fafc] text-neutral-900">
+            {/* HERO */}
+            <section className="relative pt-28 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+                {/* Soft background gradient */}
+                <div className="absolute inset-0 bg-linear-to-br from-blue-50 via-white to-indigo-50" />
+
+                <div className="relative max-w-6xl mx-auto px-6 lg:px-8 text-center">
+                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight leading-tight mb-6">
+                        Financial Systems
+                        <span className="block text-indigo-600">
+                            Education Institute
+                        </span>
+                    </h1>
+
+                    <p className="text-base sm:text-lg text-neutral-600 max-w-2xl mx-auto mb-10">
+                        Structured academic resources exploring market
+                        structure, financial risk systems, and macroeconomic
+                        dynamics.
+                    </p>
+
+                    <div className="flex flex-col sm:flex-row justify-center gap-4">
+                        <Button size="lg" asChild>
+                            <Link
+                                href="/topics"
+                                className="flex items-center gap-2"
+                            >
+                                Explore Topics
+                                <ArrowRight size={16} />
+                            </Link>
+                        </Button>
+
+                        {/* <Button variant="outline" size="lg" asChild>
+                            <Link href="/resources">Academic Library</Link>
+                        </Button> */}
+                    </div>
+                </div>
+            </section>
+
+            <section className="py-20 lg:py-28 bg-[#f1f5f9]">
+                <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+                    <h2 className="text-2xl sm:text-3xl font-semibold mb-6">
+                        Institutional Clarity in Complex Systems
+                    </h2>
+
+                    <p className="text-neutral-600 leading-relaxed">
+                        Financial systems are interconnected and multi-layered.
+                        This institute delivers academically structured material
+                        designed to simplify foundational mechanisms without
+                        promotional bias.
+                    </p>
+                </div>
+            </section>
+
+            {/* PILLARS */}
+            <section className="py-20 lg:py-28 bg-white bg-linear-to-br from-blue-50 via-white to-indigo-50">
+                <div className="max-w-6xl mx-auto px-6 lg:px-8">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl sm:text-4xl font-semibold mb-4">
+                            Core Academic Pillars
+                        </h2>
+                        <p className="text-neutral-600 max-w-2xl mx-auto">
+                            Three integrated domains forming the structural
+                            foundation of financial system education.
+                        </p>
+                    </div>
+
+                    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                        <PillarCard
+                            title="Market Structure & Liquidity"
+                            description="Price discovery, liquidity theory, and institutional flow mechanics."
+                        />
+
+                        <PillarCard
+                            title="Risk & Financial Stability"
+                            description="Volatility frameworks, systemic interconnectedness, and risk modeling."
+                        />
+
+                        <PillarCard
+                            title="Macroeconomic Systems"
+                            description="Inflation dynamics, monetary policy transmission, and global capital flows."
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <section className="py-36 bg-white border-y border-neutral-200 ">
+                <div className="max-w-4xl mx-auto px-8">
+                    <h2 className="text-3xl font-semibold text-center mb-16">
+                        Frequently Asked Questions
+                    </h2>
+
+                    <div className="space-y-10 text-neutral-600">
+                        <div>
+                            <h3 className="font-semibold text-neutral-900 mb-2">
+                                Do you provide trading services?
+                            </h3>
+                            <p>
+                                No. This platform provides educational content
+                                only and does not offer trading, brokerage, or
+                                execution services.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 className="font-semibold text-neutral-900 mb-2">
+                                Is this financial advice?
+                            </h3>
+                            <p>
+                                No. All material is informational and academic
+                                in nature.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 className="font-semibold text-neutral-900 mb-2">
+                                Who is this suitable for?
+                            </h3>
+                            <p>
+                                Individuals seeking structured understanding of
+                                financial market systems and macroeconomic
+                                dynamics.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* FINAL CTA */}
+            <section className="py-24 lg:py-32 bg-white text-center border-t bg-linear-to-br from-blue-50 via-white to-indigo-50 ">
+                <div className="max-w-3xl mx-auto px-6 lg:px-8 ">
+                    <h2 className="text-3xl sm:text-4xl font-semibold mb-6">
+                        Begin Structured Learning
+                    </h2>
+
+                    <p className="text-neutral-600 mb-10">
+                        Access detailed academic publications within our
+                        research library.
+                    </p>
+
+                    <Button size="lg" asChild>
+                        <Link href="/topics">View Library</Link>
+                    </Button>
+                </div>
+            </section>
+
+        </main>
+    );
+}
+
+/* Pillar Card */
+function PillarCard({ title, description }) {
+    return (
+        <div className="group rounded-2xl border bg-white p-8 shadow-sm transition duration-300 hover:shadow-lg hover:-translate-y-1">
+            <h3 className="text-xl font-semibold mb-3 group-hover:text-indigo-600 transition">
+                {title}
+            </h3>
+            <p className="text-neutral-600 leading-relaxed">{description}</p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+    );
 }
