@@ -64,7 +64,7 @@ export default function Footer() {
                         </h4>
 
                         <p className="mb-3">
-                            Contact: +248 467 19 76
+                            Tel: +357 25 761455
                         </p>
                         <p className="mb-3">
                             Email: support@icmarkets.com

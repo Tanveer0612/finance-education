@@ -20,7 +20,7 @@ export default function ContactPage() {
             Contact Us
           </h1>
           <h3>
-            Tel: +248 467 19 76
+            Tel: +357 25 761455
           </h3>
           <h3>
             Email: support@icmarkets.com
