@@ -12,7 +12,7 @@ export default function Home() {
 
                 <div className="relative max-w-6xl mx-auto px-6 lg:px-8 text-center">
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight leading-tight mb-6">
-                        Financial Systems
+                        IC Markets Group
                         <span className="block text-indigo-600">
                             Education Institute
                         </span>

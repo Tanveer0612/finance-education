@@ -11,7 +11,7 @@ export default function ContactPage() {
   }
 
   return (
-    <main className="bg-[#f8fafc] text-neutral-900 min-h-screen">
+    <main className="bg-[#f8fafc] text-neutral-900">
 
       {/* HEADER */}
       <section className="bg-white border-b py-20">
@@ -19,6 +19,12 @@ export default function ContactPage() {
           <h1 className="text-4xl font-semibold mb-6">
             Contact Us
           </h1>
+          <h3>
+            Tel: +248 467 19 76
+          </h3>
+          <h3>
+            Email: support@icmarkets.com
+          </h3>
           <p className="text-neutral-600 max-w-2xl leading-relaxed">
             For academic inquiries, research collaboration requests,
             or general questions regarding our educational materials,
@@ -134,6 +140,41 @@ export default function ContactPage() {
               </p>
             </div>
 
+          </div>
+
+          {/* REGISTERED OFFICE */}
+          <div className="mt-20 bg-white border rounded-2xl p-10 text-center">
+            <h3 className="text-xl font-semibold mb-8">
+              Registered Office
+            </h3>
+
+            <div className="grid md:grid-cols-2 gap-12 text-sm text-neutral-600">
+
+              <div>
+                <p className="font-semibold text-neutral-900 mb-3">
+                  English
+                </p>
+                <p>
+                  141 Omonoias Avenue<br />
+                  Th. Maritime 1FL<br />
+                  3045 Limassol<br />
+                  Cyprus
+                </p>
+              </div>
+
+              <div>
+                <p className="font-semibold text-neutral-900 mb-3">
+                  Ελληνικά
+                </p>
+                <p>
+                  Λεωφ. Ομονοίας 141<br />
+                  Th. Maritime 1FL<br />
+                  3045 Λεμεσός<br />
+                  Κύπρος
+                </p>
+              </div>
+
+            </div>
           </div>
 
           {/* DISCLAIMER */}

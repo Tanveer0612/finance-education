@@ -29,7 +29,7 @@ export default function Navbar() {
                     href="/"
                     className="text-lg font-semibold tracking-tight text-neutral-900"
                 >
-                    FinEdu Research
+                    IC Markets Group
                 </Link>
 
                 {/* Desktop Nav */}
