@@ -50,7 +50,7 @@ export default function ContactPage() {
                                     <input
                                         type="text"
                                         required
-                                        className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
                                     />
                                 </div>
 
@@ -61,7 +61,7 @@ export default function ContactPage() {
                                     <input
                                         type="email"
                                         required
-                                        className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
                                     />
                                 </div>
 
@@ -72,7 +72,7 @@ export default function ContactPage() {
                                     <input
                                         type="text"
                                         required
-                                        className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
                                     />
                                 </div>
 
@@ -83,13 +83,13 @@ export default function ContactPage() {
                                     <textarea
                                         rows={6}
                                         required
-                                        className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                        className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
                                     />
                                 </div>
 
                                 <button
                                     type="submit"
-                                    className="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 transition font-medium"
+                                    className="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition font-medium"
                                 >
                                     Submit Inquiry
                                 </button>
