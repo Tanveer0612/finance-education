@@ -115,13 +115,13 @@ export default function Topics() {
                                 <li key={module.id}>
                                     <Link
                                         href={`/topics/${module.id}`}
-                                        className="flex justify-between border-b pb-2 hover:text-indigo-600 transition"
+                                        className="flex justify-between border-b pb-2 hover:text-green-500 transition"
                                     >
                                         <span>
                                             {module.number} — {module.title}
                                         </span>
-                                        <span className="text-neutral-400 text-sm">
-                                            Module
+                                        <span className="text-sm text-green-500">
+                                            Click
                                         </span>
                                     </Link>
                                 </li>
