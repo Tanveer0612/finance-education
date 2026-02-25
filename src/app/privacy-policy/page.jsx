@@ -1,3 +1,8 @@
+export const metadata = {
+    title: "Privacy Policy - IC Markets",
+    description: "Privacy Policy of IC Markets",
+};
+
 export default function PrivacyPolicy() {
     return (
         <main className="bg-[#f8fafc] text-neutral-900 py-20">

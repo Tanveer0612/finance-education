@@ -1,5 +1,10 @@
 import Link from "next/link";
 
+export const metadata = {
+    title: "Topics - IC Markets",
+    description: "Educational Academic Topics for Financial Education",
+};
+
 export default function Topics() {
     const pillars = [
         {

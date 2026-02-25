@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-    title: "FinEdu Research",
+    title: "IC Markets",
     description: "Financial market education and research resources.",
 };
 

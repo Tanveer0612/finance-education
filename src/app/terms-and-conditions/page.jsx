@@ -1,3 +1,8 @@
+export const metadata = {
+    title: "Terms and Conditions - IC Markets",
+    description: "Terms and Conditions for IC Markets",
+};
+
 export default function TermsAndConditions() {
     return (
         <main className="bg-[#f8fafc] text-neutral-900 py-20">

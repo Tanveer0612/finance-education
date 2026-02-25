@@ -69,7 +69,7 @@ export default function Navbar() {
                                 <SheetTitle>Navigation Menu</SheetTitle>
                             </VisuallyHidden>
 
-                            <div className="flex flex-col gap-6 mt-12 text-lg font-medium">
+                            <div className="flex flex-col gap-6 mt-12 pl-2 text-lg font-medium">
                                 {navLinks.map((link) => {
                                     const isActive = pathname === link.href;
                                     return (
@@ -87,11 +87,11 @@ export default function Navbar() {
                                     );
                                 })}
 
-                                <Button asChild className="mt-6">
+                                {/* <Button asChild className="mt-6">
                                     <Link href="/topics">
                                         Academic Framework
                                     </Link>
-                                </Button>
+                                </Button> */}
                             </div>
                         </SheetContent>
                     </Sheet>
