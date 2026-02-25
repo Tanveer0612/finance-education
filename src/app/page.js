@@ -13,7 +13,7 @@ export default function Home() {
                 <div className="relative max-w-6xl mx-auto px-6 lg:px-8 text-center">
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight leading-tight mb-6">
                         IC Markets Group
-                        <span className="block text-indigo-600">
+                        <span className="block  text-green-500">
                             Education Institute
                         </span>
                     </h1>
@@ -157,7 +157,7 @@ export default function Home() {
 function PillarCard({ title, description }) {
     return (
         <div className="group rounded-2xl border bg-white p-8 shadow-sm transition duration-300 hover:shadow-lg hover:-translate-y-1">
-            <h3 className="text-xl font-semibold mb-3 group-hover:text-indigo-600 transition">
+            <h3 className="text-xl font-semibold mb-3 group-hover:text-green-500 transition">
                 {title}
             </h3>
             <p className="text-neutral-600 leading-relaxed">{description}</p>

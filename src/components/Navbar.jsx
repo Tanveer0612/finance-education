@@ -11,6 +11,7 @@ import {
     SheetTitle,
 } from "@/components/ui/sheet";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
+import Image from "next/image";
 
 export default function Navbar() {
     const pathname = usePathname();
@@ -22,16 +23,24 @@ export default function Navbar() {
     ];
 
     return (
-        <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-lg border-b border-neutral-200">
+        <header className="sticky top-0 z-50  bg-black ">
             <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
                 {/* Logo */}
-                <Link
+                {/* <Link
                     href="/"
                     className="text-lg font-semibold tracking-tight text-neutral-900"
                 >
                     IC Markets Group
+                </Link> */}
+                <Link href="/" className="flex items-center">
+                    <Image
+                        src="/ic_logo.svg"
+                        width={125}
+                        height={105}
+                        alt="IC Markets Web Logo"
+                        priority
+                    />
                 </Link>
-
                 {/* Desktop Nav */}
                 <nav className="hidden md:flex items-center gap-10 text-sm font-medium">
                     {navLinks.map((link) => {
@@ -42,16 +51,14 @@ export default function Navbar() {
                                 href={link.href}
                                 className={`transition ${
                                     isActive
-                                        ? "text-indigo-600"
-                                        : "text-neutral-600 hover:text-neutral-900"
+                                        ? "text-green-300"
+                                        : "text-slate-400 hover:text-green-300"
                                 }`}
                             >
                                 {link.label}
                             </Link>
                         );
                     })}
-
-                    
                 </nav>
 
                 {/* Mobile Nav */}
@@ -59,7 +66,7 @@ export default function Navbar() {
                     <Sheet>
                         <SheetTrigger asChild>
                             <Button variant="ghost" size="icon">
-                                <Menu className="h-5 w-5 text-neutral-800" />
+                                <Menu className="h-5 w-5 text-slate-400" />
                             </Button>
                         </SheetTrigger>
 
@@ -78,7 +85,7 @@ export default function Navbar() {
                                             href={link.href}
                                             className={`${
                                                 isActive
-                                                    ? "text-indigo-600"
+                                                    ? "text-green-500"
                                                     : "text-neutral-700"
                                             }`}
                                         >

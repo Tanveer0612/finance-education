@@ -16,6 +16,23 @@ const geistMono = Geist_Mono({
 export const metadata = {
     title: "IC Markets",
     description: "Financial market education and research resources.",
+    icons: {
+        icon: "favicons/favicon.ico",
+        apple: "favicons/apple-touch-icon.png",
+        other: [
+            {
+                rel: "icon",
+                url: "favicons/android-chrome-192x192.png",
+                sizes: "192x192",
+            },
+            {
+                rel: "icon",
+                url: "favicons/android-chrome-512x512.png",
+                sizes: "512x512",
+            },
+        ],
+    },
+    manifest: "favicons/site.webmanifest",
 };
 
 export default function RootLayout({ children }) {
