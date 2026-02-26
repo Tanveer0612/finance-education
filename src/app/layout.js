@@ -16,6 +16,11 @@ const geistMono = Geist_Mono({
 export const metadata = {
     title: "IC Markets",
     description: "Financial market education and research resources.",
+    verification: {
+        other: {
+            "facebook-domain-verification": "ci2ale5hqzg0ojsqe5nszdjutbv2s",
+        },
+    },
     icons: {
         icon: "favicons/favicon.ico",
         apple: "favicons/apple-touch-icon.png",
