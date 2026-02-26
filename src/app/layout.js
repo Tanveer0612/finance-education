@@ -18,7 +18,7 @@ export const metadata = {
     description: "Financial market education and research resources.",
     verification: {
         other: {
-            "facebook-domain-verification": "ci2ale5hqzg0ojsqe5nszdjutbv2s",
+            "facebook-domain-verification": "ci2ale5hqzg0ojsqe5nszdtjutbv2s",
         },
     },
     icons: {
